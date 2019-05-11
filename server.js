@@ -16,9 +16,11 @@ app.get("/",function(req,res){
     res.send("index.html");
 });
 app.post("/getPhoto",function(req,res){
-    unsplash.search.photos(req.body.keyword,1).then(result=>{
+    unsplash.search.photos(req.body.keyword,1).then(function(result){
         res.send({url:result.url});
-    });
+    }).catch(function(err){
+        console.log(err);
+    })
 });
 app.listen(process.env.PORT||3000,function(){
     console.log("Server running");

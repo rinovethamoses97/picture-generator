@@ -1,0 +1,19 @@
+{
+  "name": "picgenerator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "rino",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "es6-promise": "^4.2.6",
+    "express": "^4.16.4",
+    "isomorphic-fetch": "^2.2.1",
+    "unsplash-js": "^5.0.0",
+    "whatwg-fetch": "^3.0.0"
+  }
+}
